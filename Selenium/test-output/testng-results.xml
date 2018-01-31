@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21727" started-at="2018-01-11T11:48:11Z" finished-at="2018-01-11T11:48:33Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="21727" started-at="2018-01-11T11:48:11Z" finished-at="2018-01-11T11:48:33Z">
+      <class name="com.java.Selenium.POM.RegisterTesting">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.java.Selenium.POM.RegisterTesting@15d0c81b]" name="setup" is-config="true" duration-ms="9306" started-at="2018-01-11T17:18:11Z" finished-at="2018-01-11T17:18:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Testing()[pri:0, instance:com.java.Selenium.POM.RegisterTesting@15d0c81b]" name="Testing" duration-ms="12400" started-at="2018-01-11T17:18:20Z" finished-at="2018-01-11T17:18:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testing -->
+      </class> <!-- com.java.Selenium.POM.RegisterTesting -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
