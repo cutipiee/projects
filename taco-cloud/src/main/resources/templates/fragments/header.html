@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="header">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Fashion</title>
+	
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,500' rel='stylesheet' type='text/css'/>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+
+	<link rel="stylesheet" type="text/css" href="lib/rs-plugin/css/settings.css" media="screen" />
+
+    <link rel="stylesheet" href="style.css"/>
+	
+    <link rel="stylesheet" href="css/meanmenu.min.css"/>
+	
+    <link rel="stylesheet" href="css/responsive.css"/>
+	
+    <link rel="shortcut icon" href="images/favicon.png" />
+ 
+  </head>
+  <body>
+	
+	<header>
+		<div class="container">
+			<div class="header_top">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="header_top_left float-left">
+							<ul class="social_icon">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+							<ul class="social_others">
+								<li><a><i class="fa fa-phone"></i>+8801711223344</a></li>
+								<li><a href="#"><i class="fa fa-envelope-o"></i>support@domain.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="header_top_right text-right">
+							<ul>
+								<li><a href="#">Account</a></li>
+								<li><a href="#">Wishlist</a></li>
+								<li><a href="#">Register / Login</a></li>
+								<li class="searchbox">
+									<input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" />
+									<input type="submit" class="searchbox-submit" value=""/>
+									<span class="searchbox-icon"><i class="fa fa-search"></i></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="container">
+				<div class="row mega_relative">
+					<div class="col-xs-12 col-sm-2">
+						<div class="logo head_lo">
+							<a th:href="@{$'/' +{index}}"><img src="images/logo.png" alt="Logo" /></a>
+						</div>
+					</div>
+					<div class="col-sm-10">
+						<div class="mainmenu float-right">
+							<nav>
+								<ul>
+								<li><a th:href="@{${index}}">Home</a></li>
+									<!-- <li><a href="index.html">HOME</a></li>-->
+									<li><a href="#">NEW</a></li>
+									<li><a href="#">FEATURED</a></li>
+									<li><a href="#">BLOG</a></li>
+									<li><a href="#">BRAND</a></li>
+									<li><a href="#">OFFERS</a></li>
+									<li><a th:href="@{${contact}}">CONTACT</a></li>
+									<li class="shop_icon">
+										<a href="checkout.html"><img src="images/menu_icon_img.png" alt="" /></a>
+										<span>10</span>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+	</header>
+	<!-- mobile-menu-area start -->
+	<div class="mobile-menu-area">
+		<div class="container">
+			<div class="mobile-menu">
+				<nav id="dropdown">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="#">NEW</a></li>
+						<li><a href="#">FEATURED</a></li>
+						<li><a href="#">BLOG</a></li>
+						<li><a href="#">BRAND</a></li>
+						<li><a href="#">OFFERS</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	</body>
+	</html>
